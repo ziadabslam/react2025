@@ -94,6 +94,7 @@ button
     font-size: 18px;
     padding: 10px;
     border-radius: 7px;
+    border-style:solid;
     border-color: white;
     color: white;
     margin: 25px;
