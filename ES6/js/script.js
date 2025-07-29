@@ -24,6 +24,7 @@ newElement.classList.add("m");
 newElement.classList.add("p");
 
 var test = newElement.classList.contains("new")
+
 console.log(test);
 
 
@@ -57,6 +58,92 @@ let newFriends = ["Yara", "Mariam", "Loaa"]
 let allFriends = ["shahd", ...oldFriends , ...newFriends  ,"ail"]
 console.log(allFriends);
 
+let person = {
+    name:"ziad",
+    age:20,
+    career:"fall-stack",
+    son:{
+        sonName:"ody",
+        age:4,
+    
+    }
+}
+
+let {name:pesonName , career, son:{sonName}} = person;
+
+console.log(pesonName)
+
+console.log(career)
+
+console.log(sonName)
 
 
+let itimembers = ["ziad", "yara", "mohamed", "ahmed"];
+
+let [ var1,var2] = itimembers;
+console.log(var1,var2)
+
+document.body.addEventListener("click", function()
+{
+    console.log(this);
+})
+
+let sum = (num1,num2) => num1+num2
+
+console.log(sum(10 , 80));
+
+let numz  = [10,20,30,40,50]
+
+for (let num of numz)
+{
+    console.log(num)
+}
+
+let user = {
+    fname: "ziad",
+    age: 20,
+    career:"full-stack development"
+}
+
+// regular object 
+
+for (let att in user )
+{
+    console.log(att); // key
+    console.log(user[att]) // value 
+}
+
+let result = numz.map(function(num)
+{
+    return num + 100;
+})
+
+console.log(result)
+
+let users = [
+    {fName: "ziad", age: 18, salary: 5000},
+    {fName: "ali", age: 20, salary: 2000},
+    {fName: "mohamed", age: 25, salary: 6000}
+]
+
+let rsalary = users.map((user)=> console.log(`welocme ${user.fName} your salay is: ${users[0].salary} $ us`))
+
+console.log(rsalary
+)
+
+let newnumz = numz.filter((num)=> num > 20);
+
+console.log(newnumz)
+
+
+let userInfos = [
+    {email: "test1@email.com", password: "102030"},
+    {email: "zizom5742@gmail.com", password: "1020"},
+    {email: "test3@email.com", password: "1050"},
+    {email: "test4@email.com", password: "3020"},
+    {email: "test5@email.com", password: "4060"},
+]
+
+let userfind = userInfos.find((user) => user.email === "zizom5742@gmail.com"  && user.password == 1020 )
+console.log(userfind)
 

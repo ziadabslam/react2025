@@ -1,4 +1,6 @@
-export default Home()
+import Homestyle from './home.css'
+
+export default function Home()
 {
     return <>
 
